@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Suez One', serif;
+}
+.wrap
+{
+    display: flex;
+    justify-content: center; /* horizontally centre */
+    align-items: center; /*vertically centre*/
+    background: linear-gradient(to top, gold 0%, purple 80%);
+    width: 100vw; height: 100vh;
+}
+.grad
+{
+    display: flex;
+    justify-content: center; /* horizontally centre */
+    align-items: center; /*vertically centre*/
+    background: linear-gradient(to top left, gold 0%, purple 80%);
+    width: 100vw; height: 100vh;
+}
+.welctext
+{
+    width: 400px;
+}
+.welcform input,
+.welcform button
+{
+    display: block;
+    width: 100%;
+}
+.welcform input
+{
+    margin-bottom: 10px;
+    background-color: transparent ;
+    border-radius: 100px;
+    border-bottom: 2px solid black;
+    padding: 20px 0;
+    text-align:  center;
+    font-size: 30px;
+    font-family: 'Suez One', serif;
+}
+.welcform input:focus{
+    outline: none;
+    border-color: blue;
+}
+.welcform button
+{
+    color: indigo;
+    border: none;
+    border-radius: 100px;
+    font-size: 30px;
+    padding: 20px 0px;
+    transition: 0.25s;
+}
+.welcform button:hover, button:focus
+{
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    color: red;
+}
+.quiz
+{
+    display: grid;
+    grid-template-rows: 60px auto;
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+}
+.qhead
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: goldenrod;
+    border-top-left-radius:3px;
+    border-top-right-radius: 3px;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.3); z-index: 1;
+}
+.qbody
+{
+    background-color: pink;
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius: 3px;
+    padding: 30px 30px;
+}
+.quser
+{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.qtime
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100px;
+    background-color: purple;
+    color: white;
+}
+
+.optgrp
+{
+    list-style-type: none;
+    margin: 30px 0;
+}
+.opt
+{
+    display: block;
+    background-color: papayawhip;
+    width: 300px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    border: 2px solid transparent;
+    transition: 0.4s all;
+}
+.opt:hover{
+    cursor: pointer;
+    border: 2px solid purple;
+}
+.nxtbut
+{
+    background-color: purple;
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 100px;
+    transition: 0.25s all;
+}
+.nxtbut:hover{
+    cursor: pointer;
+    background-color: white;
+    color:purple;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+}
+.opt.active
+{
+    background-color: purple;
+    color: white;
+    transition: 0.25s;
+}
+.award_icon {
+    display: block;
+    font-size: 300px;
+    color: #fff;
+}
+.wrap2{
+    display: flex;
+    justify-content: center; /* horizontally centre */
+    align-items: center; /*vertically centre*/
+    background: linear-gradient(to top, crimson 0%,orange 100%);
+    width: 100vw; height: 100vh;
+}
+.username,
+.userpoints,
+.usertime {
+  font-size: large;
+  font-family: 'Suez One', serif;
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+}
+.shareicon
+{
+    display: block;
+    font-size: 100px;
+    color: #fff;
+}
